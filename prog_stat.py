@@ -103,6 +103,11 @@ plt.xticks(rotation=15)
 plt.tight_layout()
 plt.show()
 
+a=cars93.groupby('AirBags')['Price'].mean()
+a=a.plot(kind='bar')
+plt.xticks(rotation=0)
+
+
 
 
 
